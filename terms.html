@@ -67,12 +67,10 @@ tailwind.config = {
     </span>
   </a>
   <div class="hidden md:flex items-center gap-8 text-[14px]" style="color: var(--color-ink-soft);">
-    <a href="index.html" class="hover:opacity-100 transition cursor-pointer" style="color: var(--color-ink);">How it works</a>
-    <a href="index.html" class="cursor-pointer">Features</a>
-    <a href="index.html" class="cursor-pointer">Metrics</a>
-    <a href="index.html" class="cursor-pointer">R10</a>
-    <a href="index.html" class="cursor-pointer">Pricing</a>
-    <a href="index.html" class="cursor-pointer">FAQ</a>
+    <a href="index.html" class="hover:opacity-80 transition cursor-pointer" style="color: var(--color-ink); text-decoration: none;">How it works</a>
+    <a href="pricing.html" class="cursor-pointer hover:opacity-80" style="text-decoration: none; color: inherit;">Pricing</a>
+    <a href="about.html" class="cursor-pointer hover:opacity-80" style="text-decoration: none; color: inherit;">About</a>
+    <a href="faq.html" class="cursor-pointer hover:opacity-80" style="text-decoration: none; color: inherit;">FAQ</a>
   </div>
   <div class="flex items-center gap-2 md:gap-3">
     <button id="theme-toggle" aria-label="Toggle theme" class="w-10 h-10 rounded-full flex items-center justify-center transition" style="border: 1px solid var(--color-line); color: var(--color-ink);">
@@ -97,12 +95,10 @@ tailwind.config = {
   <!-- Mobile dropdown menu -->
   <div id="mobile-menu" class="hidden absolute top-full left-0 right-0 z-50 md:hidden" style="background: var(--color-bg); border-bottom: 1px solid var(--color-line);">
     <div class="px-4 py-5 flex flex-col gap-4 text-[15px]" style="color: var(--color-ink-soft);">
-      <a href="index.html" class="cursor-pointer hover:opacity-80" style="color: var(--color-ink);">How it works</a>
-      <a href="index.html" class="cursor-pointer hover:opacity-80">Features</a>
-      <a href="index.html" class="cursor-pointer hover:opacity-80">Metrics</a>
-      <a href="index.html" class="cursor-pointer hover:opacity-80">R10</a>
-      <a href="index.html" class="cursor-pointer hover:opacity-80">Pricing</a>
-      <a href="index.html" class="cursor-pointer hover:opacity-80">FAQ</a>
+      <a href="index.html" class="cursor-pointer hover:opacity-80" style="color: var(--color-ink); text-decoration: none;">How it works</a>
+      <a href="pricing.html" class="cursor-pointer hover:opacity-80" style="text-decoration: none; color: inherit;">Pricing</a>
+      <a href="about.html" class="cursor-pointer hover:opacity-80" style="text-decoration: none; color: inherit;">About</a>
+      <a href="faq.html" class="cursor-pointer hover:opacity-80" style="text-decoration: none; color: inherit;">FAQ</a>
       <button class="px-5 py-3 rounded-full text-[13.5px] font-semibold mt-1" style="background: var(--color-chip); color: var(--color-chip-ink);">
         Sign up
       </button>
@@ -268,15 +264,57 @@ tailwind.config = {
 </main>
 
 <!-- FOOTER -->
-<footer class="border-t border-gray-200 dark:border-gray-800 mt-16 py-10 px-6 text-center text-sm opacity-50">
-  <p>&copy; 2026 GolfKoda. All rights reserved.</p>
-  <p class="mt-2">
-    <a href="index.html" class="hover:underline">Home</a>
-    &middot;
-    <a href="terms.html" class="hover:underline">Terms and Conditions</a>
-    &middot;
-    <a href="privacy.html" class="hover:underline">Privacy Policy</a>
-  </p>
+<footer class="px-4 md:px-12 py-8 md:py-12" style="border-top: 1px solid var(--color-line); background: var(--color-bg);">
+  <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-8 md:mb-10 gap-8">
+    <div>
+      <div class="flex items-center gap-2.5">
+        <svg width="36" height="36" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="19" fill="var(--logo-bg)" stroke="var(--logo-inner)" stroke-width="1.5" />
+          <circle cx="15" cy="27" r="5" fill="var(--logo-inner)" />
+          <circle cx="13" cy="26" r="0.7" fill="var(--logo-bg)" opacity="0.4" />
+          <circle cx="16" cy="28" r="0.7" fill="var(--logo-bg)" opacity="0.4" />
+          <circle cx="17" cy="25" r="0.7" fill="var(--logo-bg)" opacity="0.4" />
+          <path d="M24 8 L24 30" stroke="var(--logo-inner)" stroke-width="1.6" stroke-linecap="round" />
+          <path d="M24 9 L31 12 L24 15 Z" fill="var(--logo-inner)" />
+        </svg>
+        <span style="color: var(--color-ink); font-size: 22px; font-weight: 600; letter-spacing: -0.01em;">
+          Koda Launch <span style="color: var(--color-accent); font-weight: 500;">AI</span>
+        </span>
+      </div>
+      <p class="mt-4 max-w-xs text-[13px]" style="color: var(--color-ink-soft);">
+        A golf coach for Garmin R10 owners. Real coaching, every shot.
+      </p>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 md:gap-12 text-[13px]">
+      <div>
+        <div class="font-semibold mb-3" style="color: var(--color-ink);">Product</div>
+        <ul class="space-y-2" style="color: var(--color-ink-soft);">
+          <li><a href="index.html" class="cursor-pointer hover:opacity-80 transition" style="text-decoration: none; color: inherit;">How it works</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold mb-3" style="color: var(--color-ink);">Company</div>
+        <ul class="space-y-2" style="color: var(--color-ink-soft);">
+          <li><a href="about.html" class="cursor-pointer hover:opacity-80 transition" style="text-decoration: none; color: inherit;">About</a></li>
+          <li><a href="pricing.html" class="cursor-pointer hover:opacity-80 transition" style="text-decoration: none; color: inherit;">Pricing</a></li>
+          <li><a href="faq.html" class="cursor-pointer hover:opacity-80 transition" style="text-decoration: none; color: inherit;">FAQ</a></li>
+          <li class="cursor-pointer">Contact</li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold mb-3" style="color: var(--color-ink);">Legal</div>
+        <ul class="space-y-2" style="color: var(--color-ink-soft);">
+          <li><a href="terms.html" class="cursor-pointer hover:opacity-80 transition" style="text-decoration: none; color: var(--color-accent);">Terms</a></li>
+          <li><a href="privacy.html" class="cursor-pointer hover:opacity-80 transition" style="text-decoration: none; color: inherit;">Privacy</a></li>
+          <li class="cursor-pointer">Cookies</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-between text-[12px] pt-6" style="border-top: 1px solid var(--color-line); color: var(--color-ink-soft);">
+    <span>© 2026 Koda Launch AI, LLC.</span>
+    <span class="font-mono">v0.1 · Pre-launch</span>
+  </div>
 </footer>
 
 <script src="theme.js"></script>

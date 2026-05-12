@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://golfkoda.com/sitemap.xml
+Sitemap: https://kodalaunch.com/sitemap.xml

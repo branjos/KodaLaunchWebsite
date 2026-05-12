@@ -1,6 +1,6 @@
 # Koda Launch AI — Website
 
-Static site hosted on GitHub Pages at [golfkoda.com](https://golfkoda.com).
+Static site hosted on GitHub Pages at [kodalaunch.com](https://kodalaunch.com).
 
 ## Deploying changes
 

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>/* no-flash */(function(){var c=localStorage.getItem('koda_consent'),t=localStorage.getItem('koda_theme'),d=c==='true'&&t!==null?t!=='light':window.matchMedia('(prefers-color-scheme: dark)').matches;if(d){document.documentElement.setAttribute('data-theme','dark');document.documentElement.classList.add('dark');}})();</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Koda Launch AI — The AI golf coach for your Garmin R10</title>
@@ -450,54 +451,7 @@
     </div>
   </footer>
 
-  <!-- Theme Toggle Script -->
-  <script>
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const iconDark = document.getElementById('theme-icon-dark');
-    const iconLight = document.getElementById('theme-icon-light');
-    
-    // Default to dark theme for this brand direction
-    let isDark = true;
-
-    const heroLight = document.getElementById('hero-app-light');
-    const heroDark = document.getElementById('hero-app-dark');
-    const coachLight = document.getElementById('coach-app-light');
-    const coachDark = document.getElementById('coach-app-dark');
-    const sessionLight = document.getElementById('session-app-light');
-    const sessionDark = document.getElementById('session-app-dark');
-
-    function updateTheme() {
-      if (isDark) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        iconDark.classList.remove('hidden');
-        iconLight.classList.add('hidden');
-        heroDark.style.display = 'block';
-        heroLight.style.display = 'none';
-        coachDark.style.display = 'block';
-        coachLight.style.display = 'none';
-        sessionDark.style.display = 'block';
-        sessionLight.style.display = 'none';
-      } else {
-        document.documentElement.removeAttribute('data-theme');
-        iconLight.classList.remove('hidden');
-        iconDark.classList.add('hidden');
-        heroLight.style.display = 'block';
-        heroDark.style.display = 'none';
-        coachLight.style.display = 'block';
-        coachDark.style.display = 'none';
-        sessionLight.style.display = 'block';
-        sessionDark.style.display = 'none';
-      }
-    }
-
-    themeToggleBtn.addEventListener('click', () => {
-      isDark = !isDark;
-      updateTheme();
-    });
-
-    // Initialize immediately
-    updateTheme();
-  </script>
+  <script src="theme.js"></script>
 
 </body>
 </html>

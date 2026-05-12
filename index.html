@@ -133,7 +133,7 @@
             See it in action ↓
           </button>
         </div>
-        <div class="grid grid-cols-3 gap-2 max-w-md">
+        <!-- <div class="grid grid-cols-3 gap-2 max-w-md">
           <div class="rounded-lg px-3 py-2.5" style="background: var(--color-surface); border: 1px solid var(--color-line);">
             <div class="font-display text-[28px] leading-none" style="color: var(--color-ink);">14</div>
             <div class="font-mono text-[9px] tracking-widest mt-1" style="color: var(--color-ink-soft);">METRICS</div>
@@ -146,109 +146,14 @@
             <div class="font-display text-[28px] leading-none" style="color: var(--color-ink);">100</div>
             <div class="font-mono text-[9px] tracking-widest mt-1" style="color: var(--color-ink-soft);">SHOT SCORE</div>
           </div>
-        </div>
+        </div> -->
       </div>
 
-      <!-- Right Live Console (Static Representation) -->
+      <!-- Right App Screenshot -->
       <div class="col-span-7">
-        <div class="rounded-2xl overflow-hidden" style="background: var(--color-paper); border: 1px solid var(--color-line); box-shadow: var(--shadow-console);">
-          
-          <div class="flex items-center justify-between px-5 py-3.5" style="background: var(--color-bg); border-bottom: 1px solid var(--color-line);">
-            <div class="flex items-center gap-3">
-              <svg width="26" height="26" viewBox="0 0 40 40" aria-hidden="true">
-                <circle cx="20" cy="20" r="19" fill="var(--logo-bg)" stroke="var(--logo-inner)" stroke-width="1.5" />
-                <circle cx="15" cy="27" r="5" fill="var(--logo-inner)" />
-                <path d="M24 8 L24 30" stroke="var(--logo-inner)" stroke-width="1.6" stroke-linecap="round" />
-                <path d="M24 9 L31 12 L24 15 Z" fill="var(--logo-inner)" />
-              </svg>
-              <span style="color: var(--color-ink); font-size: 14px; font-weight: 600;">Koda Launch AI</span>
-            </div>
-            <div class="flex items-center gap-4 text-[11px]" style="color: var(--color-ink-soft);">
-              <span class="flex items-center gap-1.5 font-mono"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--color-accent); box-shadow: 0 0 6px var(--color-accent);"></span> READY</span>
-              <span class="font-mono">PW</span>
-              <span class="font-mono">SESSION 04 · 01/03</span>
-            </div>
-          </div>
-
-          <div class="grid" style="grid-template-columns: 1fr 280px;">
-            <div class="relative p-5" style="background: var(--color-bg); min-height: 420px;">
-              <div class="rounded-lg p-3 inline-block" style="background: var(--color-primary); color: var(--color-chip-ink); width: 160px;">
-                <div class="text-center font-bold tracking-wider text-[13px] mb-2">PUSH</div>
-                <div class="space-y-1 text-[10px]">
-                  <div class="flex justify-between"><span style="opacity: 0.7;">FACE</span><span class="font-bold">77</span></div>
-                  <div class="flex justify-between"><span style="opacity: 0.7;">PATH</span><span class="font-bold">80</span></div>
-                  <div class="flex justify-between"><span style="opacity: 0.7;">STRIKE</span><span class="font-bold">30</span></div>
-                </div>
-                <div class="text-center mt-3">
-                  <div class="text-[8px]" style="opacity: 0.7;">TOTAL</div>
-                  <div class="font-display text-[36px] leading-none" style="color: var(--color-accent);">64</div>
-                </div>
-              </div>
-
-              <svg viewBox="0 0 600 260" class="absolute inset-x-5 bottom-12" style="height: 260px;">
-                <g stroke="var(--color-line)" stroke-width="0.5" fill="none" opacity="0.5">
-                  <line x1="220" y1="240" x2="100" y2="60" />
-                  <line x1="140" y1="240" x2="-100" y2="60" />
-                  <line x1="60" y1="240" x2="-300" y2="60" />
-                  <line x1="-20" y1="240" x2="-500" y2="60" />
-                  <line x1="380" y1="240" x2="500" y2="60" />
-                  <line x1="460" y1="240" x2="700" y2="60" />
-                  <line x1="540" y1="240" x2="900" y2="60" />
-                  <line x1="620" y1="240" x2="1100" y2="60" />
-                  <line x1="300" y1="240" x2="300" y2="60" />
-                  <line x1="0" y1="186" x2="600" y2="186" />
-                  <line x1="0" y1="141" x2="600" y2="141" />
-                  <line x1="0" y1="96" x2="600" y2="96" />
-                </g>
-                <text x="200" y="150" fill="var(--color-ink-soft)" font-size="9" font-family="Geist Mono">50y</text>
-                <text x="270" y="100" fill="var(--color-ink-soft)" font-size="9" font-family="Geist Mono">150y</text>
-                <path d="M300 240 Q325 109 350 139" fill="none" stroke="var(--color-accent)" stroke-width="2" opacity="0.5" />
-                <circle cx="350" cy="139" r="5" fill="var(--color-accent)">
-                  <animate attributeName="r" values="4;7;4" dur="0.8s" repeatCount="indefinite" />
-                </circle>
-              </svg>
-
-              <div class="absolute inset-x-0 bottom-0 grid grid-cols-6 px-5 py-3" style="background: var(--color-surface-dark); border-top: 1px solid var(--color-line);">
-                <div><div class="font-mono text-[8px] tracking-widest" style="color: var(--color-ink-soft);">SPEED</div><div class="font-bold text-[13px] tabular-nums" style="color: var(--color-ink);">76.7<span class="text-[9px] ml-0.5" style="color: var(--color-ink-soft);">mph</span></div></div>
-                <div><div class="font-mono text-[8px] tracking-widest" style="color: var(--color-ink-soft);">SMASH</div><div class="font-bold text-[13px] tabular-nums" style="color: var(--color-ink);">1.14<span class="text-[9px] ml-0.5" style="color: var(--color-ink-soft);"></span></div></div>
-                <div><div class="font-mono text-[8px] tracking-widest" style="color: var(--color-ink-soft);">CARRY</div><div class="font-bold text-[13px] tabular-nums" style="color: var(--color-ink);">90<span class="text-[9px] ml-0.5" style="color: var(--color-ink-soft);">y</span></div></div>
-                <div><div class="font-mono text-[8px] tracking-widest" style="color: var(--color-ink-soft);">SPIN</div><div class="font-bold text-[13px] tabular-nums" style="color: var(--color-ink);">7023<span class="text-[9px] ml-0.5" style="color: var(--color-ink-soft);"></span></div></div>
-                <div><div class="font-mono text-[8px] tracking-widest" style="color: var(--color-ink-soft);">FACE</div><div class="font-bold text-[13px] tabular-nums" style="color: var(--color-ink);">3.9<span class="text-[9px] ml-0.5" style="color: var(--color-ink-soft);">°</span></div></div>
-                <div><div class="font-mono text-[8px] tracking-widest" style="color: var(--color-ink-soft);">PATH</div><div class="font-bold text-[13px] tabular-nums" style="color: var(--color-ink);">5.1<span class="text-[9px] ml-0.5" style="color: var(--color-ink-soft);">°</span></div></div>
-              </div>
-            </div>
-
-            <div class="flex flex-col p-4" style="background: var(--color-paper); border-left: 1px solid var(--color-line);">
-              <div class="rounded-lg px-3 py-2.5 flex items-center justify-center gap-2 mb-3" style="background: var(--color-primary); color: var(--color-chip-ink);">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg>
-                <span class="font-semibold text-[13px]">Open Analysis Hub</span>
-              </div>
-              <div class="flex items-center justify-between mb-2">
-                <span class="font-semibold text-[13px]" style="color: var(--color-ink);">Session History</span>
-                <span class="px-2 py-0.5 rounded-full text-[9px] font-semibold" style="background: var(--color-surface); color: var(--color-ink-soft);">1 SHOTS</span>
-              </div>
-              <div class="space-y-1.5 mb-4">
-                <div class="flex justify-between items-center px-3 py-2 rounded" style="background: var(--color-surface); border-left: 3px solid var(--color-accent);">
-                  <span class="font-mono text-[11px]" style="color: var(--color-ink-soft);">#1</span>
-                  <span class="font-bold text-[12px]" style="color: var(--color-ink);">90 yds</span>
-                </div>
-              </div>
-              <div class="flex-1 rounded-lg p-3 mb-3" style="background: var(--color-surface); border: 1px solid var(--color-line);">
-                <div class="flex items-center justify-between mb-1">
-                  <span class="font-mono text-[9px] tracking-[0.2em]" style="color: var(--color-accent);">SESSION SUMMARY</span>
-                  <span class="font-mono text-[9px]" style="color: var(--color-ink-soft);">LIVE</span>
-                </div>
-                <div class="flex items-baseline gap-2 mt-1">
-                  <span class="font-display text-[34px] leading-none" style="color: var(--color-ink);">64</span>
-                  <span class="text-[10px]" style="color: var(--color-ink-soft);">AVG SCORE</span>
-                </div>
-                <div class="text-[10.5px] mt-1.5 leading-snug font-mono" style="color: var(--color-ink-soft);">
-                  1/3 SHOTS · BEST 64
-                </div>
-              </div>
-              <button class="rounded-md py-2.5 font-bold text-[12px]" style="background: #D8513F; color: #FFF;">END SESSION</button>
-            </div>
-          </div>
+        <div class="relative" style="box-shadow: var(--shadow-console); border-radius: 16px; overflow: hidden; width: 90%; margin: 0 auto;">
+          <img id="hero-app-light" src="app-light.png" alt="Koda Launch AI app — light mode" class="w-full block" style="border-radius: 16px;" />
+          <img id="hero-app-dark" src="app-dark.png" alt="Koda Launch AI app — dark mode" class="w-full block" style="border-radius: 16px; display: none;" />
         </div>
       </div>
 
@@ -309,7 +214,7 @@
         <div class="p-8" style="background: var(--color-bg);">
           <div class="font-mono text-[11px] mb-8" style="color: var(--color-accent);">04</div>
           <div class="font-display text-[32px] mb-3" style="color: var(--color-ink);">Improve</div>
-          <p class="text-[13.5px] leading-relaxed" style="color: var(--color-ink-soft);">Track strike quality, face, and path session over session. Watch the average climb over time.</p>
+          <p class="text-[13.5px] leading-relaxed" style="color: var(--color-ink-soft);">Koda detects trends across your sessions — spotting recurring patterns and gives you actionable advice to correct what's holding you back.</p>
         </div>
       </div>
     </div>
@@ -327,97 +232,37 @@
           <span class="text-[12px] font-mono" style="color: var(--color-ink);">67 · Playable</span>
         </div>
       </div>
-      <div class="col-span-7">
-        <div class="rounded-2xl overflow-hidden" style="border: 1px solid var(--color-line); background: var(--color-surface);">
-          <!-- AppMockup (Compact) -->
-          <div class="rounded-2xl overflow-hidden relative" style="background: var(--color-bg); border: 1px solid var(--color-line); box-shadow: var(--shadow-app);">
-            <div class="flex items-center justify-between px-6 py-4" style="background: var(--color-bg); border-bottom: 1px solid var(--color-line);">
-              <div class="flex items-center gap-3">
-                <svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true">
-                  <circle cx="20" cy="20" r="19" fill="var(--logo-bg)" stroke="var(--logo-inner)" stroke-width="1.5" />
-                  <circle cx="15" cy="27" r="5" fill="var(--logo-inner)" />
-                  <path d="M24 8 L24 30" stroke="var(--logo-inner)" stroke-width="1.6" stroke-linecap="round" />
-                  <path d="M24 9 L31 12 L24 15 Z" fill="var(--logo-inner)" />
-                </svg>
-                <span style="color: var(--color-ink); font-size: 17px; font-weight: 600;">Koda Launch AI</span>
-              </div>
-              <div class="flex items-center gap-5 text-[13px]" style="color: var(--color-ink-soft);">
-                <span class="flex items-center gap-1.5"><span style="width: 8px; height: 8px; border-radius: 50%; background: var(--color-accent); display: inline-block;"></span> Ready</span>
-                <span style="font-weight: 600;">PW</span>
-                <div style="width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(135deg,#9b6cf2,#5a3aa8);"></div>
+      <div class="col-span-7 flex items-center justify-center">
+        <div class="w-full">
+          <div class="text-center mb-8">
+            <div class="font-mono text-[10px] tracking-[0.2em] mb-3" style="color: var(--color-ink-soft);">TOTAL SCORE</div>
+            <div class="font-display text-[96px] leading-none" style="color: var(--color-ink);">67</div>
+            <div class="inline-flex items-center gap-2 mt-4 px-4 py-1.5 rounded-full" style="background: var(--color-surface); border: 1px solid var(--color-line);">
+              <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--color-accent);"></span>
+              <span class="font-mono text-[11px] tracking-[0.15em]" style="color: var(--color-ink);">PLAYABLE</span>
+            </div>
+          </div>
+          <div style="height: 1px; background: var(--color-line); margin-bottom: 28px;"></div>
+          <div class="grid grid-cols-3 gap-8">
+            <div>
+              <div class="font-mono text-[10px] tracking-[0.2em] mb-3" style="color: var(--color-ink-soft);">FACE CONTROL</div>
+              <div class="font-display text-[48px] leading-none mb-3" style="color: var(--color-ink);">70</div>
+              <div style="height: 3px; border-radius: 2px; background: var(--color-line);">
+                <div style="width: 70%; height: 100%; border-radius: 2px; background: var(--color-accent);"></div>
               </div>
             </div>
-            <div class="grid" style="grid-template-columns: 1fr 320px; min-height: 340px;">
-              <div class="relative px-6 pt-6 pb-4" style="background: var(--color-bg);">
-                <div class="rounded-xl p-4" style="background: var(--color-primary); color: var(--color-chip-ink); width: 180px;">
-                  <div class="text-center font-bold tracking-wider text-[15px] mb-3">PUSH</div>
-                  <div class="space-y-1.5 text-[11px]">
-                    <div class="flex justify-between"><span style="opacity: 0.75;">FACE CONTROL</span><span class="font-bold">70</span></div>
-                    <div class="flex justify-between"><span style="opacity: 0.75;">PATH CONTROL</span><span class="font-bold">85</span></div>
-                    <div class="flex justify-between"><span style="opacity: 0.75;">STRIKE QUALITY</span><span class="font-bold">45</span></div>
-                  </div>
-                  <div class="mt-4 text-center">
-                    <div class="text-[10px]" style="opacity: 0.7;">TOTAL SCORE</div>
-                    <div class="text-[40px] leading-none font-bold" style="color: var(--color-accent);">67</div>
-                    <div class="inline-block mt-2 px-3 py-0.5 rounded-full text-[10px] font-bold" style="background: var(--color-bg); color: var(--color-primary);">PLAYABLE</div>
-                  </div>
-                </div>
-                <div class="absolute right-6 top-6 flex gap-2">
-                  <div class="rounded-lg px-3 py-2 text-center" style="background: var(--color-subtle); border: 1px solid var(--color-line); min-width: 70px;">
-                    <div class="text-[9px] tracking-widest" style="color: var(--color-ink-soft);">CARRY</div>
-                    <div class="font-bold" style="color: var(--color-ink);">104<span class="text-[10px] ml-0.5" style="color: var(--color-ink-soft);">yds</span></div>
-                  </div>
-                  <div class="rounded-lg px-3 py-2 text-center" style="background: var(--color-subtle); border: 1px solid var(--color-line); min-width: 70px;">
-                    <div class="text-[9px] tracking-widest" style="color: var(--color-ink-soft);">TOTAL</div>
-                    <div class="font-bold" style="color: var(--color-ink);">106<span class="text-[10px] ml-0.5" style="color: var(--color-ink-soft);">yds</span></div>
-                  </div>
-                </div>
-                <div class="absolute inset-x-0 bottom-12" style="height: 180px;">
-                  <svg viewBox="0 0 600 220" preserveAspectRatio="none" class="w-full h-full">
-                    <g stroke="var(--color-line)" stroke-width="0.5" fill="none" opacity="0.6">
-                      <line x1="300" y1="220" x2="300" y2="60" />
-                      <line x1="0" y1="172" x2="600" y2="172" />
-                      <line x1="0" y1="140" x2="600" y2="140" />
-                      <line x1="0" y1="108" x2="600" y2="108" />
-                    </g>
-                    <path d="M300 215 Q295 120 305 95 Q310 90 312 92 L308 215 Z" fill="var(--color-accent)" opacity="0.9" />
-                    <circle cx="300" cy="215" r="4" fill="var(--color-accent)" />
-                  </svg>
-                </div>
-                <div class="absolute inset-x-0 bottom-0 grid grid-cols-8 px-6 py-3" style="background: var(--color-surface-dark); border-top: 1px solid var(--color-line);">
-                  <div><div class="text-[8px] tracking-widest" style="color: var(--color-ink-soft);">SPEED</div><div class="font-bold text-[13px]" style="color: var(--color-ink);">84.7<span class="text-[9px] ml-0.5" style="color: var(--color-ink-soft);">mph</span></div></div>
-                  <div><div class="text-[8px] tracking-widest" style="color: var(--color-ink-soft);">SMASH</div><div class="font-bold text-[13px]" style="color: var(--color-ink);">1.16<span class="text-[9px] ml-0.5" style="color: var(--color-ink-soft);"></span></div></div>
-                  <div><div class="text-[8px] tracking-widest" style="color: var(--color-ink-soft);">LAUNCH</div><div class="font-bold text-[13px]" style="color: var(--color-ink);">25.1<span class="text-[9px] ml-0.5" style="color: var(--color-ink-soft);">°</span></div></div>
-                  <div><div class="text-[8px] tracking-widest" style="color: var(--color-ink-soft);">SPIN</div><div class="font-bold text-[13px]" style="color: var(--color-ink);">7862<span class="text-[9px] ml-0.5" style="color: var(--color-ink-soft);"></span></div></div>
-                  <div><div class="text-[8px] tracking-widest" style="color: var(--color-ink-soft);">HEIGHT</div><div class="font-bold text-[13px]" style="color: var(--color-ink);">22.6<span class="text-[9px] ml-0.5" style="color: var(--color-ink-soft);">y</span></div></div>
-                  <div><div class="text-[8px] tracking-widest" style="color: var(--color-ink-soft);">PATH</div><div class="font-bold text-[13px]" style="color: var(--color-ink);">3.8<span class="text-[9px] ml-0.5" style="color: var(--color-ink-soft);">°</span></div></div>
-                  <div><div class="text-[8px] tracking-widest" style="color: var(--color-ink-soft);">FACE</div><div class="font-bold text-[13px]" style="color: var(--color-ink);">5.6<span class="text-[9px] ml-0.5" style="color: var(--color-ink-soft);">°</span></div></div>
-                </div>
+            <div>
+              <div class="font-mono text-[10px] tracking-[0.2em] mb-3" style="color: var(--color-ink-soft);">PATH CONTROL</div>
+              <div class="font-display text-[48px] leading-none mb-3" style="color: var(--color-ink);">85</div>
+              <div style="height: 3px; border-radius: 2px; background: var(--color-line);">
+                <div style="width: 85%; height: 100%; border-radius: 2px; background: var(--color-accent);"></div>
               </div>
-              <div class="flex flex-col" style="background: var(--color-paper); border-left: 1px solid var(--color-line);">
-                <div class="p-3">
-                  <div class="rounded-lg px-4 py-3 flex items-center justify-center gap-2 relative" style="background: var(--color-primary); color: var(--color-chip-ink);">
-                    <span class="font-semibold text-[14px]">Open Coach Hub</span>
-                  </div>
-                </div>
-                <div class="px-4 pb-2 flex items-center justify-between">
-                  <span class="font-semibold text-[14px]" style="color: var(--color-ink);">Session History</span>
-                  <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold" style="background: var(--color-subtle); color: var(--color-ink-soft);">10 Shots</span>
-                </div>
-                <div class="px-4 space-y-1">
-                  <div class="flex justify-between rounded-md px-3 py-1.5" style="background: var(--color-surface); border-left: 3px solid var(--color-primary);">
-                    <span class="font-semibold text-[12px]" style="color: var(--color-ink);">#10</span><span class="font-bold text-[12px]" style="color: var(--color-ink);">104 yds</span>
-                  </div>
-                  <div class="flex justify-between rounded-md px-3 py-1.5" style="background: transparent; border-left: 3px solid transparent;">
-                    <span class="font-semibold text-[12px]" style="color: var(--color-ink);">#9</span><span class="font-bold text-[12px]" style="color: var(--color-ink);">122 yds</span>
-                  </div>
-                  <div class="flex justify-between rounded-md px-3 py-1.5" style="background: transparent; border-left: 3px solid transparent;">
-                    <span class="font-semibold text-[12px]" style="color: var(--color-ink);">#8</span><span class="font-bold text-[12px]" style="color: var(--color-ink);">96 yds</span>
-                  </div>
-                  <div class="flex justify-between rounded-md px-3 py-1.5" style="background: transparent; border-left: 3px solid transparent;">
-                    <span class="font-semibold text-[12px]" style="color: var(--color-ink);">#7</span><span class="font-bold text-[12px]" style="color: var(--color-ink);">116 yds</span>
-                  </div>
-                </div>
+            </div>
+            <div>
+              <div class="font-mono text-[10px] tracking-[0.2em] mb-3" style="color: var(--color-ink-soft);">STRIKE QUALITY</div>
+              <div class="font-display text-[48px] leading-none mb-3" style="color: var(--color-ink);">45</div>
+              <div style="height: 3px; border-radius: 2px; background: var(--color-line);">
+                <div style="width: 45%; height: 100%; border-radius: 2px; background: var(--color-accent);"></div>
               </div>
             </div>
           </div>
@@ -439,71 +284,9 @@
         </div>
       </div>
       <div class="col-span-7 order-1">
-        <div class="rounded-2xl overflow-hidden" style="border: 1px solid var(--color-line); background: var(--color-bg);">
-          <!-- AppMockup (Compact Copy) -->
-          <div class="rounded-2xl overflow-hidden relative" style="background: var(--color-bg); border: 1px solid var(--color-line); box-shadow: var(--shadow-app);">
-            <div class="flex items-center justify-between px-6 py-4" style="background: var(--color-bg); border-bottom: 1px solid var(--color-line);">
-              <div class="flex items-center gap-3">
-                <svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true">
-                  <circle cx="20" cy="20" r="19" fill="var(--logo-bg)" stroke="var(--logo-inner)" stroke-width="1.5" />
-                  <circle cx="15" cy="27" r="5" fill="var(--logo-inner)" />
-                  <path d="M24 8 L24 30" stroke="var(--logo-inner)" stroke-width="1.6" stroke-linecap="round" />
-                  <path d="M24 9 L31 12 L24 15 Z" fill="var(--logo-inner)" />
-                </svg>
-                <span style="color: var(--color-ink); font-size: 17px; font-weight: 600;">Koda Launch AI</span>
-              </div>
-              <div class="flex items-center gap-5 text-[13px]" style="color: var(--color-ink-soft);">
-                <span class="flex items-center gap-1.5"><span style="width: 8px; height: 8px; border-radius: 50%; background: var(--color-accent); display: inline-block;"></span> Ready</span>
-                <span style="font-weight: 600;">PW</span>
-                <div style="width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(135deg,#9b6cf2,#5a3aa8);"></div>
-              </div>
-            </div>
-            <div class="grid" style="grid-template-columns: 1fr 320px; min-height: 340px;">
-              <div class="relative px-6 pt-6 pb-4" style="background: var(--color-bg);">
-                <div class="absolute right-6 top-6 flex gap-2">
-                  <div class="rounded-lg px-3 py-2 text-center" style="background: var(--color-subtle); border: 1px solid var(--color-line); min-width: 70px;">
-                    <div class="text-[9px] tracking-widest" style="color: var(--color-ink-soft);">CARRY</div>
-                    <div class="font-bold" style="color: var(--color-ink);">122<span class="text-[10px] ml-0.5" style="color: var(--color-ink-soft);">yds</span></div>
-                  </div>
-                </div>
-                <!-- Chat Interface Simulation -->
-                <div class="absolute inset-x-5 bottom-16 top-5 flex flex-col gap-4 overflow-hidden">
-                   <div class="self-end px-4 py-2.5 rounded-2xl rounded-tr-sm text-[13.5px]" style="background: var(--color-line); color: var(--color-ink);">Why am I pushing everything today?</div>
-                   <div class="self-start px-4 py-3 rounded-2xl rounded-tl-sm text-[13.5px] max-w-[80%]" style="background: var(--color-paper); border: 1px solid var(--color-line); color: var(--color-ink);">
-                      <div class="flex items-center gap-2 mb-2">
-                        <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--color-accent);"></span><span class="font-mono text-[10px] style='color: var(--color-primary)'">KODA COACHING</span>
-                      </div>
-                      You're hitting the ground too early. Your strike quality is at 45 on pushes, pulling your total score down. Focus on hitting the ball first and compressing through impact.
-                   </div>
-                </div>
-                <div class="absolute inset-x-0 bottom-0 px-6 py-3" style="background: var(--color-surface-dark); border-top: 1px solid var(--color-line);">
-                  <div class="w-full rounded-full px-4 py-2 text-[13px]" style="background: var(--color-paper); border: 1px solid var(--color-line); color: var(--color-ink-soft);">Ask Koda a question...</div>
-                </div>
-              </div>
-              <div class="flex flex-col" style="background: var(--color-paper); border-left: 1px solid var(--color-line);">
-                <div class="p-3">
-                  <div class="rounded-lg px-4 py-3 flex items-center justify-center gap-2 relative" style="background: var(--color-primary); color: var(--color-chip-ink);">
-                    <span class="font-semibold text-[14px]">Return to Live</span>
-                  </div>
-                </div>
-                <div class="px-4 pb-2 flex items-center justify-between">
-                  <span class="font-semibold text-[14px]" style="color: var(--color-ink);">Session History</span>
-                  <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold" style="background: var(--color-subtle); color: var(--color-ink-soft);">10 Shots</span>
-                </div>
-                <div class="px-4 space-y-1">
-                  <div class="flex justify-between rounded-md px-3 py-1.5" style="background: transparent; border-left: 3px solid transparent;">
-                    <span class="font-semibold text-[12px]" style="color: var(--color-ink);">#10</span><span class="font-bold text-[12px]" style="color: var(--color-ink);">104 yds</span>
-                  </div>
-                  <div class="flex justify-between rounded-md px-3 py-1.5" style="background: var(--color-surface); border-left: 3px solid var(--color-primary);">
-                    <span class="font-semibold text-[12px]" style="color: var(--color-ink);">#9</span><span class="font-bold text-[12px]" style="color: var(--color-ink);">122 yds</span>
-                  </div>
-                  <div class="flex justify-between rounded-md px-3 py-1.5" style="background: transparent; border-left: 3px solid transparent;">
-                    <span class="font-semibold text-[12px]" style="color: var(--color-ink);">#8</span><span class="font-bold text-[12px]" style="color: var(--color-ink);">96 yds</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="relative" style="box-shadow: var(--shadow-app); border-radius: 16px; overflow: hidden; width: 90%; margin: 0 auto;">
+          <img id="coach-app-light" src="coach-light.png" alt="Koda Coach Hub — light mode" class="w-full block" style="border-radius: 16px;" />
+          <img id="coach-app-dark" src="coach-dark.png" alt="Koda Coach Hub — dark mode" class="w-full block" style="border-radius: 16px; display: none;" />
         </div>
       </div>
     </div>
@@ -522,124 +305,16 @@
         </div>
       </div>
       <div class="col-span-7">
-        <div class="rounded-2xl overflow-hidden" style="border: 1px solid var(--color-line); background: var(--color-surface);">
-          <!-- AppMockup (Trend Graph) -->
-          <div class="rounded-2xl overflow-hidden relative" style="background: var(--color-bg); border: 1px solid var(--color-line); box-shadow: var(--shadow-app);">
-            <div class="flex items-center justify-between px-6 py-4" style="background: var(--color-bg); border-bottom: 1px solid var(--color-line);">
-              <div class="flex items-center gap-3">
-                <svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true">
-                  <circle cx="20" cy="20" r="19" fill="var(--logo-bg)" stroke="var(--logo-inner)" stroke-width="1.5" />
-                  <circle cx="15" cy="27" r="5" fill="var(--logo-inner)" />
-                  <path d="M24 8 L24 30" stroke="var(--logo-inner)" stroke-width="1.6" stroke-linecap="round" />
-                  <path d="M24 9 L31 12 L24 15 Z" fill="var(--logo-inner)" />
-                </svg>
-                <span style="color: var(--color-ink); font-size: 17px; font-weight: 600;">Koda Launch AI</span>
-              </div>
-              <div class="flex items-center gap-5 text-[13px]" style="color: var(--color-ink-soft);">
-                <span class="flex items-center gap-1.5"><span style="width: 8px; height: 8px; border-radius: 50%; background: var(--color-ink-soft); display: inline-block;"></span> History</span>
-                <div style="width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(135deg,#9b6cf2,#5a3aa8);"></div>
-              </div>
-            </div>
-            <div class="grid" style="grid-template-columns: 1fr 320px; min-height: 340px;">
-              <div class="relative px-6 pt-6 pb-4" style="background: var(--color-bg);">
-                
-                <h3 class="font-display text-[32px] mb-6" style="color: var(--color-ink);">Strike Quality Trend</h3>
-                
-                <svg viewBox="0 0 400 200" class="w-full" style="height: 180px;">
-                  <g stroke="var(--color-line)" stroke-width="1" fill="none">
-                    <line x1="0" y1="40" x2="400" y2="40" />
-                    <line x1="0" y1="100" x2="400" y2="100" />
-                    <line x1="0" y1="160" x2="400" y2="160" />
-                  </g>
-                  <polyline points="0,180 50,150 100,160 150,120 200,90 250,110 300,60 350,40" fill="none" stroke="var(--color-accent)" stroke-width="3" />
-                  <circle cx="50" cy="150" r="4" fill="var(--color-accent)" />
-                  <circle cx="100" cy="160" r="4" fill="var(--color-accent)" />
-                  <circle cx="150" cy="120" r="4" fill="var(--color-accent)" />
-                  <circle cx="200" cy="90" r="4" fill="var(--color-accent)" />
-                  <circle cx="250" cy="110" r="4" fill="var(--color-accent)" />
-                  <circle cx="300" cy="60" r="4" fill="var(--color-accent)" />
-                  <circle cx="350" cy="40" r="6" fill="var(--color-primary)" />
-                </svg>
-
-                <div class="absolute inset-x-0 bottom-0 grid grid-cols-3 px-6 py-4" style="background: var(--color-surface-dark); border-top: 1px solid var(--color-line);">
-                  <div><div class="text-[9px] tracking-widest" style="color: var(--color-ink-soft);">STARTING SCORE</div><div class="font-bold text-[16px]" style="color: var(--color-ink);">42</div></div>
-                  <div><div class="text-[9px] tracking-widest" style="color: var(--color-ink-soft);">CURRENT SCORE</div><div class="font-bold text-[16px]" style="color: var(--color-accent);">78</div></div>
-                  <div><div class="text-[9px] tracking-widest" style="color: var(--color-ink-soft);">SESSIONS LOGGED</div><div class="font-bold text-[16px]" style="color: var(--color-ink);">12</div></div>
-                </div>
-              </div>
-              <div class="flex flex-col" style="background: var(--color-paper); border-left: 1px solid var(--color-line);">
-                <div class="px-4 py-4 flex items-center justify-between border-b" style="border-color: var(--color-line);">
-                  <span class="font-semibold text-[14px]" style="color: var(--color-ink);">Past Sessions</span>
-                </div>
-                <div class="px-4 py-4 space-y-2">
-                  <div class="flex justify-between items-center rounded-md px-3 py-2" style="background: var(--color-surface); border-left: 3px solid var(--color-primary);">
-                    <div><div class="font-semibold text-[12px]" style="color: var(--color-ink);">Today</div><div class="text-[10px]" style="color: var(--color-ink-soft);">Range · 65 balls</div></div>
-                    <span class="font-bold text-[14px]" style="color: var(--color-accent);">78</span>
-                  </div>
-                  <div class="flex justify-between items-center rounded-md px-3 py-2" style="background: transparent; border-left: 3px solid transparent;">
-                    <div><div class="font-semibold text-[12px]" style="color: var(--color-ink);">Oct 12</div><div class="text-[10px]" style="color: var(--color-ink-soft);">Range · 100 balls</div></div>
-                    <span class="font-bold text-[14px]" style="color: var(--color-ink);">70</span>
-                  </div>
-                  <div class="flex justify-between items-center rounded-md px-3 py-2" style="background: transparent; border-left: 3px solid transparent;">
-                    <div><div class="font-semibold text-[12px]" style="color: var(--color-ink);">Oct 08</div><div class="text-[10px]" style="color: var(--color-ink-soft);">Sim · 40 balls</div></div>
-                    <span class="font-bold text-[14px]" style="color: var(--color-ink);">62</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="relative" style="box-shadow: var(--shadow-app); border-radius: 16px; overflow: hidden; width: 90%; margin: 0 auto;">
+          <img id="session-app-light" src="session-light.png" alt="Koda Session Trends — light mode" class="w-full block" style="border-radius: 16px;" />
+          <img id="session-app-dark" src="session-dark.png" alt="Koda Session Trends — dark mode" class="w-full block" style="border-radius: 16px; display: none;" />
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- THREE JOBS ONE COACH -->
-  <section class="px-12 py-32" style="background: var(--color-surface); border-top: 1px solid var(--color-line); border-bottom: 1px solid var(--color-line);">
-    <div class="max-w-7xl mx-auto">
-      <div class="grid grid-cols-12 gap-8 mb-16">
-        <div class="col-span-6">
-          <div class="font-mono text-[11px] tracking-[0.25em] mb-3" style="color: var(--color-accent);">WHAT KODA DOES</div>
-          <h2 class="font-display text-[72px] leading-[1] tracking-tight" style="color: var(--color-ink);">Three jobs.<br/><em style="color: var(--color-accent);">One coach.</em></h2>
-        </div>
-        <p class="col-span-5 col-start-8 self-end text-[15px] leading-relaxed" style="color: var(--color-ink-soft);">
-          The Garmin R10 measures. Koda Launch AI explains, scores, and remembers — so every session ends with a focus you can take to the next one.
-        </p>
-      </div>
-      <div class="grid grid-cols-3 gap-6">
-        
-        <div class="rounded-2xl p-7" style="background: var(--color-bg); border: 1px solid var(--color-line);">
-          <div class="font-mono text-[10px] tracking-[0.2em] mb-5" style="color: var(--color-accent);">01 · READ</div>
-          <div class="mb-6 flex items-center" style="height: 100px;">
-            <div class="font-display leading-none" style="color: var(--color-accent); font-size: 96px; opacity: 0.35;">01</div>
-          </div>
-          <div class="font-display text-[30px] leading-tight mb-2" style="color: var(--color-ink);">Reads every shot</div>
-          <p class="text-[13.5px] leading-relaxed" style="color: var(--color-ink-soft);">Every shot is scored on Face, Path, and Strike Quality the moment your R10 finishes its read. Numbers you can read at a glance.</p>
-        </div>
-
-        <div class="rounded-2xl p-7" style="background: var(--color-bg); border: 1px solid var(--color-line);">
-          <div class="font-mono text-[10px] tracking-[0.2em] mb-5" style="color: var(--color-accent);">02 · SCORE</div>
-          <div class="mb-6 flex items-center" style="height: 100px;">
-            <div class="font-display leading-none" style="color: var(--color-accent); font-size: 96px; opacity: 0.35;">02</div>
-          </div>
-          <div class="font-display text-[30px] leading-tight mb-2" style="color: var(--color-ink);">Scores the swing</div>
-          <p class="text-[13.5px] leading-relaxed" style="color: var(--color-ink-soft);">Face, path, and strike fold into a single 0–100 number. Watch the average climb session over session.</p>
-        </div>
-
-        <div class="rounded-2xl p-7" style="background: var(--color-bg); border: 1px solid var(--color-line);">
-          <div class="font-mono text-[10px] tracking-[0.2em] mb-5" style="color: var(--color-accent);">03 · COACH</div>
-          <div class="mb-6 flex items-center" style="height: 100px;">
-            <div class="font-display leading-none" style="color: var(--color-accent); font-size: 96px; opacity: 0.35;">03</div>
-          </div>
-          <div class="font-display text-[30px] leading-tight mb-2" style="color: var(--color-ink);">Answers your questions</div>
-          <p class="text-[13.5px] leading-relaxed" style="color: var(--color-ink-soft);">Open the Coach Hub between sets. Ask anything about your session and get real coaching back in plain English.</p>
-        </div>
-
       </div>
     </div>
   </section>
 
   <!-- HARDWARE SECTION -->
-  <section class="px-12 py-32" style="background: var(--color-bg); border-top: 1px solid var(--color-line); border-bottom: 1px solid var(--color-line);">
+  <section class="px-12 py-32" style="background: var(--color-surface); border-top: 1px solid var(--color-line); border-bottom: 1px solid var(--color-line);">
     <div class="max-w-6xl mx-auto grid grid-cols-12 gap-12 items-center">
       <div class="col-span-7">
         <div class="font-mono text-[11px] tracking-[0.25em] mb-3" style="color: var(--color-accent);">HARDWARE</div>
@@ -650,26 +325,26 @@
           Koda was designed shot-by-shot against the R10's data stream. Every metric is tuned to its tolerances, every coaching response is calibrated against thousands of real R10 sessions.
         </p>
         <div class="grid grid-cols-2 gap-3 max-w-md text-[13px]">
-          <div class="flex justify-between px-4 py-3 rounded-lg" style="background: var(--color-surface); border: 1px solid var(--color-line);">
+          <div class="flex justify-between px-4 py-3 rounded-lg" style="background: var(--color-bg); border: 1px solid var(--color-line);">
             <span style="color: var(--color-ink); font-weight: 600;">Garmin R10</span>
             <span style="color: var(--color-accent);">Day-one</span>
           </div>
-          <div class="flex justify-between px-4 py-3 rounded-lg" style="background: var(--color-surface); border: 1px solid var(--color-line);">
+          <div class="flex justify-between px-4 py-3 rounded-lg" style="background: var(--color-bg); border: 1px solid var(--color-line);">
             <span style="color: var(--color-ink); font-weight: 600;">Garmin R50</span>
             <span style="color: var(--color-ink-soft);">On the roadmap</span>
           </div>
-          <div class="flex justify-between px-4 py-3 rounded-lg" style="background: var(--color-surface); border: 1px solid var(--color-line);">
+          <div class="flex justify-between px-4 py-3 rounded-lg" style="background: var(--color-bg); border: 1px solid var(--color-line);">
             <span style="color: var(--color-ink); font-weight: 600;">SkyTrak+</span>
             <span style="color: var(--color-ink-soft);">Considering</span>
           </div>
-          <div class="flex justify-between px-4 py-3 rounded-lg" style="background: var(--color-surface); border: 1px solid var(--color-line);">
+          <div class="flex justify-between px-4 py-3 rounded-lg" style="background: var(--color-bg); border: 1px solid var(--color-line);">
             <span style="color: var(--color-ink); font-weight: 600;">FlightScope Mevo+</span>
             <span style="color: var(--color-ink-soft);">Considering</span>
           </div>
         </div>
       </div>
       <div class="col-span-5">
-        <div class="rounded-2xl p-10 text-center" style="background: var(--color-surface); border: 1px solid var(--color-line);">
+        <div class="rounded-2xl p-10 text-center" style="background: var(--color-bg); border: 1px solid var(--color-line);">
           <div class="mx-auto mb-6" style="width: 220px; height: 160px; position: relative;">
             <div style="position: absolute; inset: 0; background: #0a0a0a; border-radius: 20px; border: 1px solid var(--color-line); box-shadow: 0 30px 60px -20px rgba(0,0,0,0.5);"></div>
             <div style="position: absolute; left: 24px; top: 24px; width: 60px; height: 60px; border-radius: 8px; background: #1a1a1a; border: 1px solid #2a2a2a;"></div>
@@ -680,17 +355,16 @@
           </div>
           <div class="font-mono text-[10px] tracking-[0.25em] mb-2" style="color: var(--color-accent);">OPTIMIZED FOR</div>
           <div class="font-display text-[34px]" style="color: var(--color-ink);">Garmin Approach R10</div>
-          <div class="text-[12px] mt-2" style="color: var(--color-ink-soft);">14 metrics · 0.6s shot lag · Mac &amp; Windows</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- QUOTE BLOCK -->
-  <div class="px-12 py-32" style="background: var(--color-surface);">
+  <div class="px-12 py-32" style="background: var(--color-bg);">
     <div class="max-w-5xl mx-auto">
       <div class="font-display text-[72px] leading-[1.1] mb-8" style="color: var(--color-ink);">
-        "Most launch monitors give you data. Koda gives you a lesson."
+        "Most launch monitors give you data. Koda gives you insights."
       </div>
       <div class="flex items-center gap-3 text-[13px]" style="color: var(--color-ink-soft);">
         <span class="font-mono">—</span>
@@ -700,7 +374,7 @@
   </div>
 
   <!-- FINAL CTA -->
-  <section class="px-12 py-40 text-center relative overflow-hidden" style="background: var(--color-bg); border-top: 1px solid var(--color-line);">
+  <section class="px-12 py-40 text-center relative overflow-hidden" style="background: var(--color-surface); border-top: 1px solid var(--color-line);">
     <div class="max-w-4xl mx-auto relative">
       <div class="font-mono text-[11px] tracking-[0.25em] mb-6" style="color: var(--color-accent);">FREE WHILE WE BUILD</div>
       <h2 class="font-display text-[96px] leading-[0.95] mb-8" style="color: var(--color-ink);">
@@ -711,13 +385,10 @@
       </p>
       <div class="flex justify-center gap-3">
         <button class="px-8 py-4 rounded-full font-semibold text-[15px]" style="background: var(--color-chip); color: var(--color-chip-ink);">
-          Start Coaching — Free →
-        </button>
-        <button class="px-7 py-4 rounded-full font-semibold text-[15px]" style="color: var(--color-ink); border: 1px solid var(--color-line);">
-          Download for Mac
+          Get Started
         </button>
       </div>
-      <div class="mt-6 font-mono text-[11px]" style="color: var(--color-ink-soft);">NO CREDIT CARD · WORKS WITH YOUR EXISTING R10</div>
+      <div class="mt-6 font-mono text-[11px]" style="color: var(--color-ink-soft);">WORKS WITH YOUR EXISTING R10</div>
     </div>
   </section>
 
@@ -740,7 +411,7 @@
           </span>
         </div>
         <p class="mt-4 max-w-xs text-[13px]" style="color: var(--color-ink-soft);">
-          An AI golf coach for Garmin R10 owners. Real coaching, every shot.
+          A golf coach for Garmin R10 owners. Real coaching, every shot.
         </p>
       </div>
       <div class="grid grid-cols-3 gap-12 text-[13px]">
@@ -788,15 +459,34 @@
     // Default to dark theme for this brand direction
     let isDark = true;
 
+    const heroLight = document.getElementById('hero-app-light');
+    const heroDark = document.getElementById('hero-app-dark');
+    const coachLight = document.getElementById('coach-app-light');
+    const coachDark = document.getElementById('coach-app-dark');
+    const sessionLight = document.getElementById('session-app-light');
+    const sessionDark = document.getElementById('session-app-dark');
+
     function updateTheme() {
       if (isDark) {
         document.documentElement.setAttribute('data-theme', 'dark');
         iconDark.classList.remove('hidden');
         iconLight.classList.add('hidden');
+        heroDark.style.display = 'block';
+        heroLight.style.display = 'none';
+        coachDark.style.display = 'block';
+        coachLight.style.display = 'none';
+        sessionDark.style.display = 'block';
+        sessionLight.style.display = 'none';
       } else {
         document.documentElement.removeAttribute('data-theme');
         iconLight.classList.remove('hidden');
         iconDark.classList.add('hidden');
+        heroLight.style.display = 'block';
+        heroDark.style.display = 'none';
+        coachLight.style.display = 'block';
+        coachDark.style.display = 'none';
+        sessionLight.style.display = 'block';
+        sessionDark.style.display = 'none';
       }
     }
 

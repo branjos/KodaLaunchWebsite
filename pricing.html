@@ -112,12 +112,12 @@
         <svg id="theme-icon-dark" class="hidden" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
         <svg id="theme-icon-light" class="hidden" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
-      <button class="hidden md:block px-5 py-2.5 rounded-full text-[13.5px] font-semibold transition hover:opacity-80" style="border: 1.5px solid var(--color-line); color: var(--color-ink);">
+      <a href="https://accounts.kodalaunch.com/sign-in" class="hidden md:block px-5 py-2.5 rounded-full text-[13.5px] font-semibold transition hover:opacity-80" style="border: 1.5px solid var(--color-line); color: var(--color-ink); text-decoration: none;">
         Sign in
-      </button>
-      <button class="hidden md:block px-5 py-2.5 rounded-full text-[13.5px] font-semibold transition hover:opacity-90" style="background: var(--color-chip); color: var(--color-chip-ink);">
-        Sign up
-      </button>
+      </a>
+      <a href="https://accounts.kodalaunch.com/waitlist#/?redirect_url=https%3A%2F%2Fkodalaunch.com" class="hidden md:block px-5 py-2.5 rounded-full text-[13.5px] font-semibold transition hover:opacity-90" style="background: var(--color-chip); color: var(--color-chip-ink); text-decoration: none;">
+        Join the waitlist
+      </a>
       <!-- Hamburger (mobile only) -->
       <button id="mobile-menu-toggle" class="md:hidden w-10 h-10 flex items-center justify-center rounded-full" style="border: 1px solid var(--color-line); color: var(--color-ink);" aria-label="Open menu">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -134,9 +134,9 @@
         <a href="pricing.html" class="cursor-pointer hover:opacity-80" style="color: var(--color-accent); text-decoration: none; font-weight: 500;">Pricing</a>
         <a href="about.html" class="cursor-pointer hover:opacity-80" style="text-decoration: none; color: inherit;">About</a>
         <a href="faq.html" class="cursor-pointer hover:opacity-80" style="text-decoration: none; color: inherit;">FAQ</a>
-        <button class="px-5 py-3 rounded-full text-[13.5px] font-semibold mt-1" style="background: var(--color-chip); color: var(--color-chip-ink);">
-          Sign up
-        </button>
+        <a href="https://accounts.kodalaunch.com/waitlist#/?redirect_url=https%3A%2F%2Fkodalaunch.com" class="px-5 py-3 rounded-full text-[13.5px] font-semibold mt-1" style="background: var(--color-chip); color: var(--color-chip-ink); text-decoration: none; display: inline-block;">
+          Join the waitlist
+        </a>
       </div>
     </div>
   </nav>
@@ -160,58 +160,62 @@
 
       <!-- FREE -->
       <div class="flex flex-col p-8 md:p-10" style="background: var(--color-bg);">
-        <div class="font-mono text-[11px] tracking-[0.25em] mb-6" style="color: var(--color-ink-soft);">FREE</div>
+        <div class="font-mono text-[11px] tracking-[0.25em] mb-2" style="color: var(--color-ink-soft);">FREE</div>
+        <div class="text-[13px] mb-5" style="color: var(--color-ink-soft);">Track your range session</div>
         <div class="mb-1">
           <span class="font-display text-[52px] leading-none" style="color: var(--color-ink);">$0</span>
         </div>
         <div class="font-mono text-[11px] mb-8" style="color: var(--color-ink-soft);">/ month · forever</div>
-        <button class="w-full py-3 rounded-full text-[13.5px] font-semibold mb-10 transition hover:opacity-80" style="border: 1.5px solid var(--color-line); color: var(--color-ink);">
-          Sign up free
-        </button>
         <div class="flex flex-col gap-4 flex-1">
           <div class="font-mono text-[10px] tracking-[0.2em] mb-1" style="color: var(--color-ink-soft);">INCLUDES</div>
           <div class="flex items-start gap-3 text-[13.5px]" style="color: var(--color-ink);">
             <span style="color: var(--color-accent); margin-top: 1px; flex-shrink: 0;">✓</span>
-            Range with shot visualization
+            Real-time launch monitor metrics
           </div>
           <div class="flex items-start gap-3 text-[13.5px]" style="color: var(--color-ink);">
             <span style="color: var(--color-accent); margin-top: 1px; flex-shrink: 0;">✓</span>
-            Total shot score (0–100)
+            Basic shot scoring
           </div>
           <div class="flex items-start gap-3 text-[13.5px]" style="color: var(--color-ink);">
             <span style="color: var(--color-accent); margin-top: 1px; flex-shrink: 0;">✓</span>
-            Raw shot metrics from R10
+            In-session shot history
+          </div>
+          <div class="flex items-start gap-3 text-[13.5px]" style="color: var(--color-ink-soft);">
+            <span style="margin-top: 1px; flex-shrink: 0;">—</span>
+            No cloud storage · local only
           </div>
         </div>
       </div>
 
       <!-- INSIGHTS -->
       <div class="flex flex-col p-8 md:p-10" style="background: var(--color-surface);">
-        <div class="font-mono text-[11px] tracking-[0.25em] mb-6" style="color: var(--color-ink-soft);">INSIGHTS</div>
+        <div class="font-mono text-[11px] tracking-[0.25em] mb-2" style="color: var(--color-ink-soft);">INSIGHTS</div>
+        <div class="text-[13px] mb-5" style="color: var(--color-ink-soft);">Understand your swing</div>
         <div class="mb-1">
           <span class="font-display text-[52px] leading-none" style="color: var(--color-ink);">$9</span><span class="font-display text-[28px]" style="color: var(--color-ink-soft);">.99</span>
         </div>
         <div class="font-mono text-[11px] mb-8" style="color: var(--color-ink-soft);">/ month</div>
-        <button class="w-full py-3 rounded-full text-[13.5px] font-semibold mb-10 transition hover:opacity-80" style="border: 1.5px solid var(--color-line); color: var(--color-ink);">
-          Sign up
-        </button>
         <div class="flex flex-col gap-4 flex-1">
           <div class="font-mono text-[10px] tracking-[0.2em] mb-1" style="color: var(--color-ink-soft);">EVERYTHING IN FREE, PLUS</div>
           <div class="flex items-start gap-3 text-[13.5px]" style="color: var(--color-ink);">
             <span style="color: var(--color-accent); margin-top: 1px; flex-shrink: 0;">✓</span>
-            Full shot scoring breakdown
+            Enhanced score breakdown
           </div>
           <div class="flex items-start gap-3 text-[13.5px]" style="color: var(--color-ink);">
             <span style="color: var(--color-accent); margin-top: 1px; flex-shrink: 0;">✓</span>
-            Stored session data
+            Cloud session storage + history
           </div>
           <div class="flex items-start gap-3 text-[13.5px]" style="color: var(--color-ink);">
             <span style="color: var(--color-accent); margin-top: 1px; flex-shrink: 0;">✓</span>
-            Unlimited shot explanations
+            Post-session analysis from Koda
           </div>
           <div class="flex items-start gap-3 text-[13.5px]" style="color: var(--color-ink);">
             <span style="color: var(--color-accent); margin-top: 1px; flex-shrink: 0;">✓</span>
-            25 Coach chat messages / mo
+            Post-session chat with Koda
+          </div>
+          <div class="flex items-start gap-3 text-[13.5px]" style="color: var(--color-ink);">
+            <span style="color: var(--color-accent); margin-top: 1px; flex-shrink: 0;">✓</span>
+            Session trends and focus areas
           </div>
         </div>
       </div>
@@ -221,27 +225,29 @@
         <div class="absolute top-5 right-5">
           <span class="font-mono text-[10px] tracking-[0.15em] px-3 py-1.5 rounded-full" style="background: var(--color-accent); color: #0D1B13;">MOST POPULAR</span>
         </div>
-        <div class="font-mono text-[11px] tracking-[0.25em] mb-6" style="color: rgba(255,255,255,0.5);">COACH</div>
+        <div class="font-mono text-[11px] tracking-[0.25em] mb-2" style="color: rgba(255,255,255,0.5);">COACH</div>
+        <div class="text-[13px] mb-5" style="color: rgba(255,255,255,0.5);">Improve your swing in real time</div>
         <div class="mb-1">
           <span class="font-display text-[52px] leading-none" style="color: #fff;">$19</span><span class="font-display text-[28px]" style="color: rgba(255,255,255,0.6);">.99</span>
         </div>
         <div class="font-mono text-[11px] mb-8" style="color: rgba(255,255,255,0.5);">/ month</div>
-        <button class="w-full py-3 rounded-full text-[13.5px] font-semibold mb-10 transition hover:opacity-90" style="background: var(--color-accent); color: #fff;">
-          Sign up
-        </button>
         <div class="flex flex-col gap-4 flex-1">
           <div class="font-mono text-[10px] tracking-[0.2em] mb-1" style="color: rgba(255,255,255,0.45);">EVERYTHING IN INSIGHTS, PLUS</div>
           <div class="flex items-start gap-3 text-[13.5px]" style="color: rgba(255,255,255,0.9);">
             <span style="color: var(--color-accent); margin-top: 1px; flex-shrink: 0;">✓</span>
-            Session insights & trend analysis
+            Mid-session coaching
           </div>
           <div class="flex items-start gap-3 text-[13.5px]" style="color: rgba(255,255,255,0.9);">
             <span style="color: var(--color-accent); margin-top: 1px; flex-shrink: 0;">✓</span>
-            500 Coach chat messages / mo
+            Mid-session coaching chat with Koda
           </div>
           <div class="flex items-start gap-3 text-[13.5px]" style="color: rgba(255,255,255,0.9);">
             <span style="color: var(--color-accent); margin-top: 1px; flex-shrink: 0;">✓</span>
-            Dedicated coach mode
+            Trend tracking and suggestion
+          </div>
+          <div class="flex items-start gap-3 text-[13.5px]" style="color: rgba(255,255,255,0.9);">
+            <span style="color: var(--color-accent); margin-top: 1px; flex-shrink: 0;">✓</span>
+            Coach Mode for structured practice
           </div>
         </div>
       </div>
@@ -270,65 +276,89 @@
           <div class="col-span-4 font-mono text-[10px] tracking-[0.2em]" style="color: var(--color-ink-soft);">RANGE & SHOT DATA</div>
         </div>
         <div class="grid grid-cols-4 gap-0 px-5 py-4" style="border-bottom: 1px solid var(--color-line);">
-          <div class="text-[13.5px]" style="color: var(--color-ink);">Shot visualization</div>
+          <div class="text-[13.5px]" style="color: var(--color-ink);">Launch monitor metrics</div>
           <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
           <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
           <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
         </div>
         <div class="grid grid-cols-4 gap-0 px-5 py-4" style="border-bottom: 1px solid var(--color-line);">
-          <div class="text-[13.5px]" style="color: var(--color-ink);">Raw shot metrics</div>
+          <div class="text-[13.5px]" style="color: var(--color-ink);">Basic shot scoring</div>
           <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
           <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
           <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
         </div>
         <div class="grid grid-cols-4 gap-0 px-5 py-4" style="border-bottom: 1px solid var(--color-line);">
-          <div class="text-[13.5px]" style="color: var(--color-ink);">Total shot score (0–100)</div>
+          <div class="text-[13.5px]" style="color: var(--color-ink);">In-session shot history</div>
           <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
+          <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
+          <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
+        </div>
+        <div class="grid grid-cols-4 gap-0 px-5 py-4" style="border-bottom: 1px solid var(--color-line);">
+          <div class="text-[13.5px]" style="color: var(--color-ink);">Cloud session storage + history</div>
+          <div class="text-center text-[14px]" style="color: var(--color-ink-soft);">—</div>
           <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
           <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
         </div>
 
-        <!-- Group: Scoring -->
+        <!-- Group: Insights & Analysis -->
         <div class="grid grid-cols-4 gap-0 px-5 py-2" style="background: var(--color-surface); border-bottom: 1px solid var(--color-line); border-top: 1px solid var(--color-line);">
-          <div class="col-span-4 font-mono text-[10px] tracking-[0.2em]" style="color: var(--color-ink-soft);">SCORING & HISTORY</div>
+          <div class="col-span-4 font-mono text-[10px] tracking-[0.2em]" style="color: var(--color-ink-soft);">INSIGHTS & ANALYSIS</div>
         </div>
         <div class="grid grid-cols-4 gap-0 px-5 py-4" style="border-bottom: 1px solid var(--color-line);">
-          <div class="text-[13.5px]" style="color: var(--color-ink);">Full shot scoring breakdown</div>
-          <div class="text-center text-[14px]" style="color: var(--color-ink-soft);">—</div>
-          <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
-          <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
-        </div>
-        <div class="grid grid-cols-4 gap-0 px-5 py-4" style="border-bottom: 1px solid var(--color-line);">
-          <div class="text-[13.5px]" style="color: var(--color-ink);">Stored session data</div>
+          <div class="text-[13.5px]" style="color: var(--color-ink);">Enhanced score breakdown</div>
           <div class="text-center text-[14px]" style="color: var(--color-ink-soft);">—</div>
           <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
           <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
         </div>
         <div class="grid grid-cols-4 gap-0 px-5 py-4" style="border-bottom: 1px solid var(--color-line);">
-          <div class="text-[13.5px]" style="color: var(--color-ink);">Session trend analysis</div>
+          <div class="text-[13.5px]" style="color: var(--color-ink);">Post-session AI summary</div>
           <div class="text-center text-[14px]" style="color: var(--color-ink-soft);">—</div>
+          <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
+          <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
+        </div>
+        <div class="grid grid-cols-4 gap-0 px-5 py-4" style="border-bottom: 1px solid var(--color-line);">
+          <div class="text-[13.5px]" style="color: var(--color-ink);">Post-session drill recommendation</div>
           <div class="text-center text-[14px]" style="color: var(--color-ink-soft);">—</div>
+          <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
+          <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
+        </div>
+        <div class="grid grid-cols-4 gap-0 px-5 py-4" style="border-bottom: 1px solid var(--color-line);">
+          <div class="text-[13.5px]" style="color: var(--color-ink);">Post-session chat with Koda</div>
+          <div class="text-center text-[14px]" style="color: var(--color-ink-soft);">—</div>
+          <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
+          <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
+        </div>
+        <div class="grid grid-cols-4 gap-0 px-5 py-4" style="border-bottom: 1px solid var(--color-line);">
+          <div class="text-[13.5px]" style="color: var(--color-ink);">Session trends and focus areas</div>
+          <div class="text-center text-[14px]" style="color: var(--color-ink-soft);">—</div>
+          <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
           <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
         </div>
 
-        <!-- Group: Coach Hub -->
+        <!-- Group: Real-time Coaching -->
         <div class="grid grid-cols-4 gap-0 px-5 py-2" style="background: var(--color-surface); border-bottom: 1px solid var(--color-line); border-top: 1px solid var(--color-line);">
-          <div class="col-span-4 font-mono text-[10px] tracking-[0.2em]" style="color: var(--color-ink-soft);">COACH HUB</div>
+          <div class="col-span-4 font-mono text-[10px] tracking-[0.2em]" style="color: var(--color-ink-soft);">REAL-TIME COACHING</div>
         </div>
         <div class="grid grid-cols-4 gap-0 px-5 py-4" style="border-bottom: 1px solid var(--color-line);">
-          <div class="text-[13.5px]" style="color: var(--color-ink);">Shot explanations</div>
+          <div class="text-[13.5px]" style="color: var(--color-ink);">Mid-session coaching</div>
           <div class="text-center text-[14px]" style="color: var(--color-ink-soft);">—</div>
-          <div class="text-center font-mono text-[12px]" style="color: var(--color-ink);">Unlimited</div>
-          <div class="text-center font-mono text-[12px]" style="color: var(--color-ink);">Unlimited</div>
+          <div class="text-center text-[14px]" style="color: var(--color-ink-soft);">—</div>
+          <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
         </div>
         <div class="grid grid-cols-4 gap-0 px-5 py-4" style="border-bottom: 1px solid var(--color-line);">
-          <div class="text-[13.5px]" style="color: var(--color-ink);">Coach chat messages</div>
+          <div class="text-[13.5px]" style="color: var(--color-ink);">Mid-session coaching chat with Koda</div>
           <div class="text-center text-[14px]" style="color: var(--color-ink-soft);">—</div>
-          <div class="text-center font-mono text-[12px]" style="color: var(--color-ink);">25 / mo</div>
-          <div class="text-center font-mono text-[12px]" style="color: var(--color-accent); font-weight: 600;">500 / mo</div>
+          <div class="text-center text-[14px]" style="color: var(--color-ink-soft);">—</div>
+          <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
+        </div>
+        <div class="grid grid-cols-4 gap-0 px-5 py-4" style="border-bottom: 1px solid var(--color-line);">
+          <div class="text-[13.5px]" style="color: var(--color-ink);">Trend tracking and suggestion</div>
+          <div class="text-center text-[14px]" style="color: var(--color-ink-soft);">—</div>
+          <div class="text-center text-[14px]" style="color: var(--color-ink-soft);">—</div>
+          <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
         </div>
         <div class="grid grid-cols-4 gap-0 px-5 py-4">
-          <div class="text-[13.5px]" style="color: var(--color-ink);">Dedicated coach mode</div>
+          <div class="text-[13.5px]" style="color: var(--color-ink);">Coach Mode for structured practice</div>
           <div class="text-center text-[14px]" style="color: var(--color-ink-soft);">—</div>
           <div class="text-center text-[14px]" style="color: var(--color-ink-soft);">—</div>
           <div class="text-center text-[14px]" style="color: var(--color-accent);">✓</div>
@@ -349,9 +379,9 @@
         Start on the free plan — no card required. Upgrade or downgrade anytime.
       </p>
       <div class="flex flex-col sm:flex-row gap-3 justify-center">
-        <button class="px-8 py-4 rounded-full font-semibold text-[15px] transition hover:opacity-90" style="background: var(--color-chip); color: var(--color-chip-ink);">
-          Get started free
-        </button>
+        <a href="https://accounts.kodalaunch.com/waitlist#/?redirect_url=https%3A%2F%2Fkodalaunch.com" class="px-8 py-4 rounded-full font-semibold text-[15px] transition hover:opacity-90" style="background: var(--color-chip); color: var(--color-chip-ink); text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+          Join the waitlist
+        </a>
         <a href="faq.html" class="px-8 py-4 rounded-full font-semibold text-[15px] transition hover:opacity-80" style="border: 1.5px solid var(--color-line); color: var(--color-ink); text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
           Read the FAQ
         </a>
@@ -361,7 +391,7 @@
 
   <!-- FOOTER -->
   <footer class="px-4 md:px-12 py-8 md:py-12" style="border-top: 1px solid var(--color-line); background: var(--color-bg);">
-    <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-8 md:mb-10 gap-8">
+    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
       <div>
         <div class="flex items-center" style="gap: 0;">
           <img src="logo-LightMode.svg" alt="K" class="logo-light" style="height: 26px; width: auto; position: relative; top: -3px; margin-right: -4px;" />
@@ -371,6 +401,7 @@
         <p class="mt-4 max-w-xs text-[13px]" style="color: var(--color-ink-soft);">
           A golf coach for Garmin R10 owners. Real coaching, every shot.
         </p>
+        <p class="mt-3 text-[12px]" style="color: var(--color-ink-soft);">© 2026 Koda Launch AI, LLC.</p>
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 md:gap-12 text-[13px]">
         <div>
@@ -385,7 +416,7 @@
             <li><a href="about.html" class="cursor-pointer hover:opacity-80 transition" style="text-decoration: none; color: inherit;">About</a></li>
             <li><a href="pricing.html" class="cursor-pointer hover:opacity-80 transition" style="text-decoration: none; color: var(--color-accent);">Pricing</a></li>
             <li><a href="faq.html" class="cursor-pointer hover:opacity-80 transition" style="text-decoration: none; color: inherit;">FAQ</a></li>
-            <li class="cursor-pointer">Contact</li>
+            <li><a href="contact.html" class="cursor-pointer hover:opacity-80 transition" style="text-decoration: none; color: inherit;">Contact</a></li>
           </ul>
         </div>
         <div>
@@ -393,14 +424,9 @@
           <ul class="space-y-2" style="color: var(--color-ink-soft);">
             <li><a href="terms.html" class="cursor-pointer hover:opacity-80 transition" style="text-decoration: none; color: inherit;">Terms</a></li>
             <li><a href="privacy.html" class="cursor-pointer hover:opacity-80 transition" style="text-decoration: none; color: inherit;">Privacy</a></li>
-            <li class="cursor-pointer">Cookies</li>
           </ul>
         </div>
       </div>
-    </div>
-    <div class="flex justify-between text-[12px] pt-6" style="border-top: 1px solid var(--color-line); color: var(--color-ink-soft);">
-      <span>© 2026 Koda Launch AI, LLC.</span>
-      <span class="font-mono">v0.1 · Pre-launch</span>
     </div>
   </footer>
 

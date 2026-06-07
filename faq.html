@@ -133,10 +133,10 @@
         <svg id="theme-icon-dark" class="hidden" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
         <svg id="theme-icon-light" class="hidden" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
-      <a href="https://accounts.kodalaunch.com/sign-in" class="hidden md:block px-5 py-2.5 rounded-full text-[13.5px] font-semibold transition hover:opacity-80" style="border: 1.5px solid var(--color-line); color: var(--color-ink); text-decoration: none;">
+      <a href="https://accounts.kodalaunch.com/sign-in" onclick="trackSignInClick('faq', 'navbar')" class="hidden md:block px-5 py-2.5 rounded-full text-[13.5px] font-semibold transition hover:opacity-80" style="border: 1.5px solid var(--color-line); color: var(--color-ink); text-decoration: none;">
         Sign in
       </a>
-      <a href="https://accounts.kodalaunch.com/waitlist#/?redirect_url=https%3A%2F%2Fkodalaunch.com" class="hidden md:block px-5 py-2.5 rounded-full text-[13.5px] font-semibold transition hover:opacity-90" style="background: var(--color-chip); color: var(--color-chip-ink); text-decoration: none;">
+      <a href="https://accounts.kodalaunch.com/waitlist#/?redirect_url=https%3A%2F%2Fkodalaunch.com" onclick="trackWaitlistClick('faq', 'navbar')" class="hidden md:block px-5 py-2.5 rounded-full text-[13.5px] font-semibold transition hover:opacity-90" style="background: var(--color-chip); color: var(--color-chip-ink); text-decoration: none;">
         Join the waitlist
       </a>
       <button id="mobile-menu-toggle" class="md:hidden w-10 h-10 flex items-center justify-center rounded-full" style="border: 1px solid var(--color-line); color: var(--color-ink);" aria-label="Open menu">
@@ -153,7 +153,7 @@
         <a href="pricing.html" class="cursor-pointer hover:opacity-80" style="text-decoration: none; color: inherit;">Pricing</a>
         <a href="about.html" class="cursor-pointer hover:opacity-80" style="text-decoration: none; color: inherit;">About</a>
         <a href="faq.html" class="cursor-pointer hover:opacity-80" style="text-decoration: none; color: var(--color-accent); font-weight: 500;">FAQ</a>
-        <a href="https://accounts.kodalaunch.com/waitlist#/?redirect_url=https%3A%2F%2Fkodalaunch.com" class="px-5 py-3 rounded-full text-[13.5px] font-semibold mt-1" style="background: var(--color-chip); color: var(--color-chip-ink); text-decoration: none; display: inline-block;">
+        <a href="https://accounts.kodalaunch.com/waitlist#/?redirect_url=https%3A%2F%2Fkodalaunch.com" onclick="trackWaitlistClick('faq', 'mobile_menu')" class="px-5 py-3 rounded-full text-[13.5px] font-semibold mt-1" style="background: var(--color-chip); color: var(--color-chip-ink); text-decoration: none; display: inline-block;">
           Join the waitlist
         </a>
       </div>
@@ -459,6 +459,7 @@
   </footer>
 
   <script src="theme.js"></script>
+  <script src="analytics.js"></script>
   <script>
     document.getElementById('mobile-menu-toggle')?.addEventListener('click', function() {
       document.getElementById('mobile-menu').classList.toggle('hidden');

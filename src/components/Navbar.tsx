@@ -38,6 +38,7 @@ export function Navbar() {
         <Link href="/pricing" className="hover:opacity-80 transition cursor-pointer" style={navColor('/pricing')}>Pricing</Link>
         <Link href="/about" className="hover:opacity-80 transition cursor-pointer" style={navColor('/about')}>About</Link>
         <Link href="/faq" className="hover:opacity-80 transition cursor-pointer" style={navColor('/faq')}>FAQ</Link>
+        <Link href="/blog" className="hover:opacity-80 transition cursor-pointer" style={pathname.startsWith('/blog') ? { color: 'var(--color-accent)', fontWeight: 500, textDecoration: 'none' } : { color: 'inherit', textDecoration: 'none' }}>Blog</Link>
       </div>
 
       <div className="flex items-center gap-2 md:gap-3">
@@ -80,6 +81,7 @@ export function Navbar() {
             <Link href="/pricing" onClick={() => setMobileOpen(false)} className="hover:opacity-80" style={navColor('/pricing')}>Pricing</Link>
             <Link href="/about" onClick={() => setMobileOpen(false)} className="hover:opacity-80" style={navColor('/about')}>About</Link>
             <Link href="/faq" onClick={() => setMobileOpen(false)} className="hover:opacity-80" style={navColor('/faq')}>FAQ</Link>
+            <Link href="/blog" onClick={() => setMobileOpen(false)} className="hover:opacity-80" style={pathname.startsWith('/blog') ? { color: 'var(--color-accent)', fontWeight: 500, textDecoration: 'none' } : { color: 'inherit', textDecoration: 'none' }}>Blog</Link>
             <a
               href={WAITLIST_URL}
               onClick={() => trackWaitlistClick(pathname.replace('/', '') || 'home', 'mobile_menu')}

@@ -2,23 +2,29 @@
   "name": "golf-koda-website",
   "version": "1.0.0",
   "description": "",
-  "main": "theme.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/branjos/golf-koda-website.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/branjos/golf-koda-website/issues"
+  "dependencies": {
+    "next": "^15.3.3",
+    "next-themes": "^0.4.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
-  "homepage": "https://github.com/branjos/golf-koda-website#readme",
   "devDependencies": {
-    "tailwindcss": "^3.4.19"
-  }
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5"
+  },
+  "license": "ISC"
 }

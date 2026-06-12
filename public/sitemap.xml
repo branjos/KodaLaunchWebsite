@@ -6,27 +6,32 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://kodalaunch.com/pricing.html</loc>
+    <loc>https://kodalaunch.com/pricing/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kodalaunch.com/about.html</loc>
+    <loc>https://kodalaunch.com/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kodalaunch.com/faq.html</loc>
+    <loc>https://kodalaunch.com/faq/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kodalaunch.com/terms.html</loc>
+    <loc>https://kodalaunch.com/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://kodalaunch.com/terms/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://kodalaunch.com/privacy.html</loc>
+    <loc>https://kodalaunch.com/privacy/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

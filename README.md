@@ -1,54 +1,72 @@
 # Koda Launch AI — Website
 
-Static site hosted on GitHub Pages at [kodalaunch.com](https://kodalaunch.com).
-
-## Deploying changes
-
-### 1. Make your HTML edits
-
-Edit any `.html` file as normal.
-
-### 2. Rebuild Tailwind CSS
-
-After any HTML change, regenerate the compiled stylesheet so new utility classes are included:
-
-```
-npx tailwindcss -i src/input.css -o tailwind.css --minify
-```
-
-### 3. Commit everything and push
-
-Commit both your HTML changes **and** the rebuilt `tailwind.css`, then push to `main`. GitHub Pages deploys automatically.
-
-```
-git add .
-git commit -m "your message"
-git push
-```
+Next.js static site hosted on GitHub Pages at [kodalaunch.com](https://kodalaunch.com).
 
 ---
 
 ## Local development
 
-Use watch mode so `tailwind.css` rebuilds automatically as you edit:
+```
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000). Hot reload is automatic.
+
+---
+
+## Building and previewing the static export
 
 ```
-npx tailwindcss -i src/input.css -o tailwind.css --watch
+npm run build
+npx serve out
 ```
 
-Open any `.html` file directly in a browser — no local server needed.
+`npm run build` generates the `out/` directory. `npx serve out` lets you preview it locally at `http://localhost:3000` — this mirrors exactly what GitHub Pages serves.
+
+---
+
+## Deploying
+
+Push to `main`. GitHub Actions builds the site and deploys to GitHub Pages automatically.
+
+> **One-time setup:** In the repo's Settings → Pages, set the source to **GitHub Actions**.
 
 ---
 
 ## Project structure
 
 ```
-├── *.html          # All pages
 ├── src/
-│   └── input.css   # Tailwind source (do not link this directly)
-├── tailwind.css    # Compiled output — always commit this after rebuilding
+│   ├── app/
+│   │   ├── layout.tsx          # Root layout (navbar, footer, analytics)
+│   │   ├── globals.css         # All global styles and CSS variables
+│   │   ├── page.tsx            # Homepage
+│   │   ├── about/page.tsx
+│   │   ├── pricing/page.tsx
+│   │   ├── faq/page.tsx
+│   │   ├── contact/page.tsx
+│   │   ├── terms/page.tsx
+│   │   ├── privacy/page.tsx
+│   │   └── waitlist-confirmed/page.tsx
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── Footer.tsx
+│   │   ├── ThemeToggle.tsx
+│   │   ├── Providers.tsx       # next-themes wrapper
+│   │   ├── ConsentBanner.tsx
+│   │   ├── FaqAccordion.tsx
+│   │   └── WaitlistButton.tsx
+│   └── lib/
+│       └── analytics.ts        # gtag event helpers
+├── public/                     # Static assets (images, SVGs, CNAME, robots.txt, sitemap.xml)
+├── next.config.js
 ├── tailwind.config.js
-├── sitemap.xml
-├── robots.txt
-└── theme.js        # Light/dark theme toggle
+└── .github/workflows/deploy.yml
 ```
+
+---
+
+## Theme
+
+Light/dark mode is handled by `next-themes` using the `data-theme` attribute on `<html>`. CSS variables for both themes are defined in `globals.css`. No JavaScript theme logic needed outside of the `ThemeToggle` component.

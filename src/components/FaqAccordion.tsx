@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { trackFaqOpen } from '@/lib/analytics'
 
 interface FaqItem {
   question: string
@@ -19,7 +20,11 @@ export function FaqGroup({ items }: FaqGroupProps) {
       {items.map((item, i) => (
         <div key={i} className="faq-item">
           <button
-            onClick={() => setOpenIndex(openIndex === i ? null : i)}
+            onClick={() => {
+              const opening = openIndex !== i
+              setOpenIndex(opening ? i : null)
+              if (opening) trackFaqOpen(item.question)
+            }}
             className="w-full flex items-center justify-between gap-6 px-6 py-5 text-left"
             style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-ink)' }}
           >

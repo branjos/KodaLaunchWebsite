@@ -26,10 +26,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
-        <Script id="gtag-init" strategy="afterInteractive">{`
+        <Script id="gtag-consent-default" strategy="beforeInteractive">{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
+          var consent = typeof localStorage !== 'undefined' ? localStorage.getItem('koda_consent') : null;
+          gtag('consent', 'default', {
+            analytics_storage: consent === 'true' ? 'granted' : 'denied'
+          });
+        `}</Script>
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">{`
           gtag('js', new Date());
           gtag('config', '${GA_ID}');
         `}</Script>

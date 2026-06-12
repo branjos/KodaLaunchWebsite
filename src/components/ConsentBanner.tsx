@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { grantConsent, denyConsent } from '@/lib/analytics'
 
 export function ConsentBanner() {
   const [visible, setVisible] = useState(false)
@@ -13,11 +14,13 @@ export function ConsentBanner() {
 
   function accept() {
     localStorage.setItem('koda_consent', 'true')
+    grantConsent()
     setVisible(false)
   }
 
   function decline() {
     localStorage.setItem('koda_consent', 'false')
+    denyConsent()
     setVisible(false)
   }
 
@@ -38,7 +41,7 @@ export function ConsentBanner() {
       }}
     >
       <span style={{ flex: 1, minWidth: '200px', opacity: 0.85 }}>
-        We use <strong>localStorage</strong> to remember your theme preference.{' '}
+        We use cookies and analytics to understand how visitors use this site.{' '}
         <a href="/privacy" style={{ color: 'var(--color-accent)', textDecoration: 'underline' }}>
           Privacy Policy
         </a>.

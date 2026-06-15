@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { WaitlistButton } from '@/components/WaitlistButton'
+import { SignUpButton } from '@/components/SignUpButton'
 
 export const metadata: Metadata = {
   title: 'Koda Launch AI — The AI golf coach for your Garmin R10',
@@ -37,7 +37,7 @@ export default function HomePage() {
               Meet Koda — a desktop coach for your Garmin R10. Koda makes sense of the data, every session, every shot, analyzed and used to help improve your golf game.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-6 md:mb-8">
-              <WaitlistButton
+              <SignUpButton
                 page="home"
                 location="hero"
                 className="px-6 py-3.5 rounded-full font-semibold text-[14px]"
@@ -229,7 +229,7 @@ export default function HomePage() {
             Hit your next ball <em style={{ color: 'var(--color-accent)' }}>with a coach.</em>
           </h2>
           <div className="flex justify-center gap-3">
-            <WaitlistButton
+            <SignUpButton
               page="home"
               location="cta"
               className="px-8 py-4 rounded-full font-semibold text-[15px]"

@@ -16,6 +16,10 @@ export function trackWaitlistClick(page: string, location: string) {
   gtag('event', 'waitlist_click', { page, location })
 }
 
+export function trackSignUpClick(page: string, location: string) {
+  gtag('event', 'sign_up_click', { page, location })
+}
+
 export function trackSignInClick(page: string, location: string) {
   gtag('event', 'sign_in_click', { page, location })
 }

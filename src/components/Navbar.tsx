@@ -4,9 +4,9 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { ThemeToggle } from './ThemeToggle'
-import { trackSignInClick, trackWaitlistClick } from '@/lib/analytics'
+import { trackSignInClick, trackSignUpClick } from '@/lib/analytics'
 
-const WAITLIST_URL = 'https://accounts.kodalaunch.com/waitlist#/?redirect_url=https%3A%2F%2Fkodalaunch.com'
+const SIGNUP_URL = 'https://accounts.kodalaunch.com/sign-up'
 
 export function Navbar() {
   const pathname = usePathname()
@@ -52,12 +52,12 @@ export function Navbar() {
           Sign in
         </a>
         <a
-          href={WAITLIST_URL}
-          onClick={() => trackWaitlistClick(pathname.replace('/', '') || 'home', 'navbar')}
+          href={SIGNUP_URL}
+          onClick={() => trackSignUpClick(pathname.replace('/', '') || 'home', 'navbar')}
           className="hidden md:block px-5 py-2.5 rounded-full text-[13.5px] font-semibold transition hover:opacity-90"
           style={{ background: 'var(--color-chip)', color: 'var(--color-chip-ink)', textDecoration: 'none' }}
         >
-          Join the waitlist
+          Sign up
         </a>
         <button
           id="mobile-menu-toggle"
@@ -83,12 +83,12 @@ export function Navbar() {
             <Link href="/faq" onClick={() => setMobileOpen(false)} className="hover:opacity-80" style={navColor('/faq')}>FAQ</Link>
             <Link href="/blog" onClick={() => setMobileOpen(false)} className="hover:opacity-80" style={pathname.startsWith('/blog') ? { color: 'var(--color-accent)', fontWeight: 500, textDecoration: 'none' } : { color: 'inherit', textDecoration: 'none' }}>Blog</Link>
             <a
-              href={WAITLIST_URL}
-              onClick={() => trackWaitlistClick(pathname.replace('/', '') || 'home', 'mobile_menu')}
+              href={SIGNUP_URL}
+              onClick={() => trackSignUpClick(pathname.replace('/', '') || 'home', 'mobile_menu')}
               className="px-5 py-3 rounded-full text-[13.5px] font-semibold mt-1"
               style={{ background: 'var(--color-chip)', color: 'var(--color-chip-ink)', textDecoration: 'none', display: 'inline-block' }}
             >
-              Join the waitlist
+              Sign up
             </a>
           </div>
         </div>

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   twitter: { title: 'About — Koda Launch AI' },
 }
 
-const WAITLIST_URL = 'https://accounts.kodalaunch.com/waitlist#/?redirect_url=https%3A%2F%2Fkodalaunch.com'
+const SIGNUP_URL = 'https://accounts.kodalaunch.com/sign-up'
 
 export default function AboutPage() {
   return (
@@ -181,8 +181,8 @@ export default function AboutPage() {
             Built iteratively with feedback from everyday golfers, simulator owners, and Garmin R10 users.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href={WAITLIST_URL} className="px-8 py-4 rounded-full font-semibold text-[15px] transition hover:opacity-90" style={{ background: 'var(--color-chip)', color: 'var(--color-chip-ink)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
-              Join the waitlist
+            <a href={SIGNUP_URL} className="px-8 py-4 rounded-full font-semibold text-[15px] transition hover:opacity-90" style={{ background: 'var(--color-chip)', color: 'var(--color-chip-ink)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+              Sign up
             </a>
             <Link href="/pricing" className="px-8 py-4 rounded-full font-semibold text-[15px] transition hover:opacity-80" style={{ border: '1.5px solid var(--color-line)', color: 'var(--color-ink)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
               See pricing

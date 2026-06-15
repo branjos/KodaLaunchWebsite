@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { WaitlistButton } from '@/components/WaitlistButton'
+import { SignUpButton } from '@/components/SignUpButton'
 
 export const metadata: Metadata = {
   title: 'Pricing',
@@ -161,7 +161,7 @@ export default function PricingPage() {
             Start on the free plan — no card required. Upgrade or downgrade anytime.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <WaitlistButton page="pricing" location="cta" className="px-8 py-4 rounded-full font-semibold text-[15px] transition hover:opacity-90" style={{ background: 'var(--color-chip)', color: 'var(--color-chip-ink)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }} />
+            <SignUpButton page="pricing" location="cta" className="px-8 py-4 rounded-full font-semibold text-[15px] transition hover:opacity-90" style={{ background: 'var(--color-chip)', color: 'var(--color-chip-ink)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }} />
             <Link href="/faq" className="px-8 py-4 rounded-full font-semibold text-[15px] transition hover:opacity-80" style={{ border: '1.5px solid var(--color-line)', color: 'var(--color-ink)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
               Read the FAQ
             </Link>
